@@ -16,6 +16,11 @@ pipeline {
     }
     
     stages {
+	stage('Quality check') {
+            steps {
+                bat 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=11807b22879950e9cc1a90e05b7b7b5c4cb253d4'
+            }
+        }
         stage('Build') {
             steps {
                 bat 'mvn -B -DskipTests clean'
