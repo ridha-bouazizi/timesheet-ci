@@ -39,7 +39,7 @@ pipeline {
         
         stage('Nexus Repository') {
             steps {
-                bat 'mvn clean package deploy:deploy-file -DgroupId=tn.esprit -DartifactId=timesheet-ci -Dversion=5.0 -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://localhost:8081/repository/maven-releases/ -Dfile=target/timesheet-ci-1.0.jar'
+                bat 'mvn clean package deploy:deploy-file -DgroupId=tn.esprit -DartifactId=timesheet-ci -Dversion=6.0 -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://localhost:8081/repository/maven-releases/ -Dfile=target/timesheet-ci-1.0.jar'
             }
         }
     }
