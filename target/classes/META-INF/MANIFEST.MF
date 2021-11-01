@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: bouaz
+Build-Jdk: 16.0.2
+Implementation-Title: timesheet-ci
+Implementation-Version: 1.0
+Implementation-Vendor-Id: tn.esprit.spring
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/timesheet-ci
+Created-By: Maven Integration for Eclipse
+
