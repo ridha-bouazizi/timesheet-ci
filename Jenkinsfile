@@ -1,5 +1,5 @@
 pipeline {
-    anyagent
+    any agent
     
     environment {
         // This can be nexus3 or nexus2 server
